@@ -2,7 +2,7 @@
 
 A powerful MCP server that allows Claude Code to consult Gemini for complex coding problems with full code context and conversation persistence.
 
-> **Note**: This server works standalone but is highly recommended to use with the [Claude Code Development Kit](https://github.com/peterkrueck/Claude-Code-Development-Kit) for enhanced automation and context management.
+> **Note**: This server works standalone but is highly recommended to use with the [Claude Code Development Kit](https://github.com/YevSent/Claude-Code-Dev-Kit.git) for enhanced automation and context management.
 
 ## Key Features
 
@@ -18,7 +18,7 @@ A powerful MCP server that allows Claude Code to consult Gemini for complex codi
 
 ## Integration with Claude Code Development Kit
 
-While this MCP server works standalone, it is **highly recommended and optimized** to use with the [Claude Code Development Kit](https://github.com/peterkrueck/Claude-Code-Development-Kit).
+While this MCP server works standalone, it is **highly recommended and optimized** to use with the [Claude Code Development Kit](https://github.com/YevSent/Claude-Code-Dev-Kit.git).
 
 ### Enhanced Features with Development Kit
 
@@ -32,7 +32,7 @@ The Development Kit transforms Claude Code into an orchestrated development envi
 
 ### Quick Setup with Development Kit
 
-1. Install the [Claude Code Development Kit](https://github.com/peterkrueck/Claude-Code-Development-Kit)
+1. Install the [Claude Code Development Kit](https://github.com/YevSent/Claude-Code-Dev-Kit.git)
 2. Configure this MCP server as described in the installation section below
 3. The Development Kit's hooks will automatically enhance your Gemini interactions
 
@@ -51,19 +51,14 @@ When Claude Code encounters difficult problems or needs a second opinion, it can
 1. Clone this repository
 2. Create a Python virtual environment:
    ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   make install
    ```
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Copy `.env.example` to `.env` and add your Gemini API key:
+3. Copy `.env.example` to `.env` and add your Gemini API key:
    ```bash
    cp .env.example .env
    # Edit .env file and set your GEMINI_API_KEY
    ```
-5. Add to Claude Code:
+4. Add to Claude Code:
    ```bash
    claude mcp add gemini-coding -s user -- /path/to/gemini-mcp/start_server.sh
    ```
@@ -201,14 +196,3 @@ Ready to help with complex coding problems!
 - Sessions expire automatically
 - No persistent storage of code
 - When used with Claude Code Development Kit, additional security scanning prevents sensitive data leakage
-
-## Version History
-
-- v3.0.0: Enhanced system prompt for Claude Code Development Kit integration
-- v2.1.0: Added file attachment system with automatic cleanup
-- v2.0.0: Added session management and follow-up support  
-- v1.0.0: Initial stateless implementation
-
-## Connect
-
-Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/peterkrueck/) if you have questions, need clarification, or wish to provide feedback.

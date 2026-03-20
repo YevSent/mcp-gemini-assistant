@@ -3,3 +3,6 @@ node_modules/
 *.log
 .DS_Store
 CLAUDE.md
+.claude
+.idea
+__pycache__/

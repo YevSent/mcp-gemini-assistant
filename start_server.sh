@@ -13,4 +13,4 @@ if [ -z "$GEMINI_API_KEY" ]; then
     exit 1
 fi
 
-exec ./venv/bin/python gemini_mcp.py
+exec uv run python gemini_mcp.py

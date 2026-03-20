@@ -1,0 +1,14 @@
+[project]
+name = "mcp-gemini-assistant"
+version = "1.0.0"
+description = "Gemini Assistant MCP Server"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "google-genai>=0.5.0",
+    "mcp>=1.0.0",
+    "pydantic>=2.0.0"
+]
+
+[tool.setuptools.packages.find]
+include = ["src*"]
