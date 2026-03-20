@@ -14,7 +14,7 @@ A powerful MCP server that allows Claude Code to consult Gemini for complex codi
 - **Automatic Processing**: Files are processed and formatted automatically
 - **Multiple Sessions**: Run multiple parallel conversations for different problems
 - **Session Expiry**: Automatic cleanup of inactive sessions after 1 hour
-- **Latest Model**: Uses Gemini 2.5 Pro (stable) by default
+- **Latest Model**: Uses Gemini 3.1 Pro by default
 
 ## Integration with Claude Code Development Kit
 
@@ -84,6 +84,9 @@ List all active Gemini consultation sessions.
 
 ### 3. `end_session`
 End a specific session to free up memory.
+
+### 4. `list_models`
+List all available Gemini models that can be used for consultations.
 
 ## Usage Examples
 
@@ -163,7 +166,7 @@ You can test the server directly before adding it to Claude Code:
 
 The server will start and display:
 ```
-Gemini Coding Assistant MCP Server v3.0 running (Python)
+Gemini Coding Assistant MCP Server running (Python)
 Features: Session management, file attachments, context persistence, follow-up questions
 Ready to help with complex coding problems!
 ```
